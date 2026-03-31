@@ -6,6 +6,9 @@ const taskInput= document.querySelector("#taskInput")
 function createSpan(taskInputValue){
     const span = document.createElement('span');
     span.textContent = taskInputValue;
+    span.addEventListener("click",function(){
+        span.classList.toggle('completed');
+    })
     return span;
 }
 
