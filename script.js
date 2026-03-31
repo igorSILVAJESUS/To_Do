@@ -9,12 +9,12 @@ taskBtn.addEventListener("click", function(){
      span.textContent = taskInputValue;
      const button = document.createElement('button');
      button.textContent = 'Excluir'
-     button.addEventListener('click',function()(
-     
+      button.addEventListener('click', function(){
+        li.remove();
+    })
 
-     if(taskInputValue == ''){
-        return
-     }
-     li.textContent = taskInputValue;
+    li.appendChild(span)
+    li.appendChild(button)
+
     taskList.appendChild(li);
 })
